@@ -32,7 +32,7 @@ if [ "$TIPO_ESCANEO" == "completo" ]; then
   NMAP_CMD="nmap -sS -sV -p- --open $OBJETIVO"
 else
   echo "Ejecutando escaneo rápido (puertos comunes)..."
-  NMAP_CMD="nmap -sS -sV --open $OBJETIVO"
+  NMAP_CMD="nmap -sS -sV -Pn --open $OBJETIVO"
 fi
 
 
